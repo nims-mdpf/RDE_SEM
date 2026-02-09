@@ -1,0 +1,16 @@
+xml_path,dict_key
+document/creator/name,creator_name
+document/vendor/name,vendor_name
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""dateTime""]/value",date
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""instrument""]/value",machine_name
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""imageSizeX""]/value",pixel_number_along_x_axis
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""imageSizeY""]/value",pixel_number_along_y_axis
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""magnification""]/value",magnification
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""stagePositionX""]/value",coordinates_of_x_axis
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""stagePositionY""]/value",coordinates_of_y_axis
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""acceleratingVoltage""]/value",acceleration_voltage
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""fieldOfViewX""]/value",pixel_actual_size_along_x_axis
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""fieldOfViewY""]/value",pixel_actual_size_along_y_axis
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""pixelSize""]/value",pixel_size
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""workingDistance""]/value",working_distance
+"data/results/condition[@ref=""conditionTemplate_semMeasurement""]/property[@key=""detector1""]/value",detector

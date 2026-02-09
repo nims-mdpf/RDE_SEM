@@ -1,0 +1,6 @@
+system:
+    magic_variable: true
+    save_thumbnail_image: true
+
+sem:
+    manufacturer: 'jeol_maiml'
