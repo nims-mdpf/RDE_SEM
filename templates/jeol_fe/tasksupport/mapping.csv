@@ -1,0 +1,21 @@
+﻿dict_key,instrument,ja,en,type,unit,value,
+date,$CM_DATE,画像取得日,Date,string,,2024/5/7,分析年月日にマッピングするため、メタ情報として抽出します。（装置名7800Fでは2022/12/15のような表記）
+machine_name,$CM_INSTRUMENT,装置名,Machine name,string,,JSM-IT800,
+pixel_number_along_x_axis,$CM_IMAGE_SIZE,x方向の画素数,Pixel number along x axis,number,pixel,1280,"単位変化なし。画像における ""横 縦"" のピクセル数を表記しています。"
+pixel_number_along_y_axis,$CM_IMAGE_SIZE,y方向の画素数,Pixel number along y axis,number,pixel,960,"単位変化なし。画像における ""横 縦"" のピクセル数を表記しています。"
+pixel_number_along_x_axis,$CM_FULL_SIZE,x方向の画素数,,,,,装置名7800F
+pixel_number_along_y_axis,$CM_FULL_SIZE,y方向の画素数,,,,,装置名7800F
+magnification,$CM_MAG,画像倍率,Magnification,number,,2000,
+coordinates_of_x_axis,$CM_STAGE_POSITION,x方向の撮影座標,Coordinates of x axis,number,mm,0.37375,"単位変化なし。左から3つの数字はx座標, y座標, z座標のため単位はmmです。左から4, 5つ目は試料の回転を示すため, 単位はdegreeです。一番右の値は現状不明です。左から2つのx, y座標 (単位mm) の値のみ明示が必要だと考えています。"
+coordinates_of_y_axis,$CM_STAGE_POSITION,y方向の撮影座標,Coordinates of y axis,number,mm,-1.75525,"単位変化なし。左から3つの数字はx座標, y座標, z座標のため単位はmmです。左から4, 5つ目は試料の回転を示すため, 単位はdegreeです。一番右の値は現状不明です。左から2つのx, y座標 (単位mm) の値のみ明示が必要だと考えています。"
+coordinates_of_x_axis,$CM_STAGE_POS,x方向の撮影座標,,,,,装置名7800F
+coordinates_of_y_axis,$CM_STAGE_POS,y方向の撮影座標,,,,,装置名7800F
+acceleration_voltage,$CM_ACCEL_VOLT,加速電圧,Acceleration voltage,number,kV,10,単位変化なし。
+pixel_actual_size_along_x_axis,$CM_FIELD_OF_VIEW,x方向の実サイズ,Pixel actual size along x axis,number,um,64,単位変化なし。データ内に単位を含んでいます。（装置名7800Fは該当情報出力ない）
+pixel_actual_size_along_y_axis,$CM_FIELD_OF_VIEW,y方向の実サイズ,Pixel actual size along y axis,number,um,48,単位変化なし。データ内に単位を含んでいます。（装置名7800Fは該当情報出力ない）
+pixel_size,$CM_PIXEL_SIZE,画素サイズ,Pixel size,number,um/pixel,50,単位変化なし。データ内に単位を含んでいます。（装置名7800Fは該当情報出力ない）
+working_distance,$SM_WD,作動距離,Working distance,number,mm,9.816143,単位変化なし。
+working_distance,$$SM_WD,作動距離,,,,,装置名7800F
+detector,$FE_DETECTOR_NAME,検出器,Detector,string,,BED-C,backscattered electron detector-c (composition image)
+detector,$CM_DETECTOR_NAME,検出器,,,,,装置名7800F
+area_Information,areaInformation,エリア情報,Area Information,string,,0,smarttable.xlsx使用時に「エリア情報」列をマッピング

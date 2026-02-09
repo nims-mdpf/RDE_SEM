@@ -1,0 +1,147 @@
+{
+    "creator_name": {
+        "name": {
+            "ja": "作成者",
+            "en": "Creator Name"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "vendor_name": {
+        "name": {
+            "ja": "ベンダー名",
+            "en": "Vendor Name"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "date": {
+        "name": {
+            "ja": "画像取得日",
+            "en": "Date"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "machine_name": {
+        "name": {
+            "ja": "装置名",
+            "en": "Machine name"
+        },
+        "schema": {
+            "type": "string"
+        }
+    },
+    "pixel_number_along_x_axis": {
+        "name": {
+            "ja": "x方向の画素数",
+            "en": "Pixel number along x axis"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "pixel"
+    },
+    "pixel_number_along_y_axis": {
+        "name": {
+            "ja": "y方向の画素数",
+            "en": "Pixel number along y axis"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "pixel"
+    },
+    "magnification": {
+        "name": {
+            "ja": "画像倍率",
+            "en": "Magnification"
+        },
+        "schema": {
+            "type": "number"
+        }
+    },
+    "coordinates_of_x_axis": {
+        "name": {
+            "ja": "x方向の撮影座標",
+            "en": "Coordinates of x axis"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "mm"
+    },
+    "coordinates_of_y_axis": {
+        "name": {
+            "ja": "y方向の撮影座標",
+            "en": "Coordinates of y axis"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "mm"
+    },
+    "acceleration_voltage": {
+        "name": {
+            "ja": "加速電圧",
+            "en": "Acceleration voltage"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "kV"
+    },
+    "pixel_actual_size_along_x_axis": {
+        "name": {
+            "ja": "x方向の実サイズ",
+            "en": "Pixel actual size along x axis"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "um"
+    },
+    "pixel_actual_size_along_y_axis": {
+        "name": {
+            "ja": "y方向の実サイズ",
+            "en": "Pixel actual size along y axis"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "um"
+    },
+    "pixel_size": {
+        "name": {
+            "ja": "画素サイズ",
+            "en": "Pixel size"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "nm/pixel"
+    },
+    "working_distance": {
+        "name": {
+            "ja": "作動距離",
+            "en": "Working distance"
+        },
+        "schema": {
+            "type": "number"
+        },
+        "unit": "mm"
+    },
+    "detector": {
+        "name": {
+            "ja": "検出器",
+            "en": "Detector"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "description": "BED-C: backscattered electron detector-c (composition image)"
+    }
+}

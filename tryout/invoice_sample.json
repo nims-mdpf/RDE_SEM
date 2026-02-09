@@ -1,0 +1,35 @@
+{
+    "datasetId": "1s1xxxxf4-0d1v-41b0-1dea-2 3bf4dh09gxx",
+    "basic": {
+        "dateSubmitted": "",
+        "dataOwnerId": "0cxx3ef274f28e611de4074638b4dc43e737ab9931323435323434xx",
+        "dataName": "CrossBeam1540EsB_1.tif",
+        "instrumentId": null,
+        "experimentId": null,
+        "description": null
+    },
+    "custom": {
+        "id": null,
+        "mode": null,
+        "method_category": "SEM",
+        "method_sub-category": null,
+        "measurement_environment": null,
+        "energy_level_transition_structure": null,
+        "measurement_measured_date": null,
+        "standardized_procedure": null,
+        "instrumentation_site": null,
+        "reference": null
+    },
+    "sample": {
+        "sampleId": null,
+        "names": [
+            "test1"
+        ],
+        "composition": null,
+        "referenceUrl": null,
+        "description": null,
+        "generalAttributes": [
+        ],
+        "ownerId": "de17c7b3f0ff5126831c2d519f481055ba466ddb623866613231xxxx"
+    }
+}

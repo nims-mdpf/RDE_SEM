@@ -1,0 +1,112 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://rde.nims.go.jp/rde/dataset-templates/NIMS_SEM_ZEISS/invoice.schema.json",
+    "description": "None",
+    "type": "object",
+    "required": [
+        "custom",
+        "sample"
+    ],
+    "properties": {
+        "custom": {
+            "type": "object",
+            "label": {
+                "ja": "固有情報",
+                "en": "Custom Information"
+            },
+            "required": [],
+            "properties": {
+                "id": {
+                    "label": {
+                        "ja": "ID",
+                        "en": "ID"
+                    },
+                    "type": "string"
+                },
+                "mode": {
+                    "label": {
+                        "ja": "測定モード",
+                        "en": "mode"
+                    },
+                    "type": "string",
+                    "enum": [
+                        "Manual",
+                        "Auto",
+                        "None"
+                    ],
+                    "options": {
+                        "placeholder": {
+                            "ja": "CrossBeam550選択時のみ有効",
+                            "en": "Enabled only for the CrossBeam550 selection."
+                        }
+                    }
+                },
+                "method_category": {
+                    "label": {
+                        "ja": "計測法カテゴリー",
+                        "en": "Method category"
+                    },
+                    "type": "string"
+                },
+                "method_sub-category": {
+                    "label": {
+                        "ja": "計測法サブカテゴリー",
+                        "en": "Method sub-category"
+                    },
+                    "type": "string"
+                },
+                "measurement_environment": {
+                    "label": {
+                        "ja": "測定環境",
+                        "en": "Measurement environment"
+                    },
+                    "type": "string"
+                },
+                "energy_level_transition_structure": {
+                    "label": {
+                        "ja": "対象準位_遷移_構造",
+                        "en": "Energy level_transition_structure"
+                    },
+                    "type": "string"
+                },
+                "measurement_measured_date": {
+                    "label": {
+                        "ja": "分析年月日",
+                        "en": "Measured date"
+                    },
+                    "type": "string",
+                    "format": "date"
+                },
+                "standardized_procedure": {
+                    "label": {
+                        "ja": "標準手順",
+                        "en": "Standardized procedure"
+                    },
+                    "type": "string"
+                },
+                "instrumentation_site": {
+                    "label": {
+                        "ja": "装置設置場所",
+                        "en": "Instrumentation site"
+                    },
+                    "type": "string"
+                },
+                "reference": {
+                    "label": {
+                        "ja": "参考文献",
+                        "en": "Reference"
+                    },
+                    "type": "string"
+                }
+            }
+        },
+        "sample": {
+            "type": "object",
+            "label": {
+                "ja": "試料情報",
+                "en": "Sample Information"
+            },
+            "properties": {}
+        }
+    }
+}
