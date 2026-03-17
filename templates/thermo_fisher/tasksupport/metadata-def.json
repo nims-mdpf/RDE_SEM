@@ -73,16 +73,6 @@
         "order": 7,
         "unit": "m"
     },
-    "esb_grid": {
-        "name": {
-            "ja": "EsBグリッドの値",
-            "en": "EsB Grid "
-        },
-        "schema": {
-            "type": "number"
-        },
-        "order": 8
-    },
     "wd": {
         "name": {
             "ja": "ワークディスタンス",
@@ -91,17 +81,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 9
-    },
-    "scan_speed": {
-        "name": {
-            "ja": "スキャンスピード",
-            "en": "Scan speed"
-        },
-        "schema": {
-            "type": "number"
-        },
-        "order": 10
+        "order": 8
     },
     "dwel_time": {
         "name": {
@@ -111,18 +91,8 @@
         "schema": {
             "type": "number"
         },
-        "order": 11,
+        "order": 9,
         "unit": "s"
-    },
-    "noise_reduction": {
-        "name": {
-            "ja": "Noise reduction",
-            "en": "Noise reduction"
-        },
-        "schema": {
-            "type": "string"
-        },
-        "order": 12
     },
     "noise_reduction_value": {
         "name": {
@@ -132,7 +102,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 13
+        "order": 10
     },
     "frame_time": {
         "name": {
@@ -142,17 +112,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 14
-    },
-    "image_size": {
-        "name": {
-            "ja": "像サイズ",
-            "en": "Image Size"
-        },
-        "schema": {
-            "type": "number"
-        },
-        "order": 15
+        "order": 11
     },
     "image_size_x": {
         "name": {
@@ -162,7 +122,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 16
+        "order": 12
     },
     "image_size_y": {
         "name": {
@@ -172,7 +132,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 17
+        "order": 13
     },
     "pixel_resolution": {
         "name": {
@@ -182,7 +142,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 18,
+        "order": 14,
         "unit": "nm"
     },
     "image_width": {
@@ -193,7 +153,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 19,
+        "order": 15,
         "unit": "um"
     },
     "image_height": {
@@ -204,18 +164,7 @@
         "schema": {
             "type": "number"
         },
-        "order": 20,
+        "order": 16,
         "unit": "um"
-    },
-    "magnification": {
-        "name": {
-            "ja": "倍率",
-            "en": "Magnification"
-        },
-        "schema": {
-            "type": "number"
-        },
-        "order": 21,
-        "unit": "X"
     }
 }

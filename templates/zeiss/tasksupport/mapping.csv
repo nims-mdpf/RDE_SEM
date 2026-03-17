@@ -1,72 +1,40 @@
 ﻿path,dict_key,instrument
-image.machine,machine,# crossbeam 550
-application.date,date,# crossbeam 550
-image.detector,imaging_mode,# crossbeam 550
-image.acc_voltage,acc_voltage,# crossbeam 550
-image.aperture_size_value,aperture_size,# crossbeam 550
-scan.dwell,dwel_time,# crossbeam 550
-scan.lineavg,noise_reduction_value,# crossbeam 550
-tilepositionhistory.tilepositionentry.time,frame_time,# crossbeam 550
-tilepositionhistory.tilepositionentry.x,image_size_x,# crossbeam 550
-tilepositionhistory.tilepositionentry.y,image_size_y,# crossbeam 550
-scan.ux,pixel_resolution,# crossbeam 550
-scan.fov_x,image_width,# crossbeam 550
-scan.fov_y,image_height,# crossbeam 550
-mosaicinfo.row,row,# crossbeam 550
-mosaicinfo.col,column,# crossbeam 550
-systemval.file_name,raw_file_name,# crossbeam 550
+image.machine,machine,# crossbeam 550 Auto
+detection.sem,machine,# crossbeam 550 Manual
+application.date,date,# crossbeam 550 Auto
+image.detector,imaging_mode,# crossbeam 550 Auto
+image.acc_voltage,acc_voltage,# crossbeam 550 Auto
+image.aperture_size_value,aperture_size,# crossbeam 550 Auto
+scan.dwell,dwel_time,# crossbeam 550 Auto
+scan.lineavg,noise_reduction_value,# crossbeam 550 Auto
+tilepositionhistory.tilepositionentry.time,frame_time,# crossbeam 550 Auto
+tilepositionhistory.tilepositionentry.x,image_size_x,# crossbeam 550 Auto
+tilepositionhistory.tilepositionentry.y,image_size_y,# crossbeam 550 Auto
+scan.ux,pixel_resolution,# crossbeam 550 Auto
+scan.fov_x,image_width,# crossbeam 550 Auto
+scan.fov_y,image_height,# crossbeam 550 Auto
+mosaicinfo.row,row,# crossbeam 550 Auto
+mosaicinfo.col,column,# crossbeam 550 Auto
+systemval.file_name,raw_file_name,# crossbeam 550 Auto
 systemval.serial_number,machine,# crossbeam 1540
-aperture.date,date,# crossbeam 1540
-detection.detector_channel,detector,# crossbeam 1540
-systemval.file_name,raw_file_name,# crossbeam 1540
-detection.signal_a_z0,imaging_mode,# crossbeam 1540
-detection.signal_a_z2,imaging_mode,# crossbeam 1540
-detection.signal_a_z3,imaging_mode,# crossbeam 1540
-aperture.actualkv,acc_voltage,# crossbeam 1540
-aperture.aperture_size,aperture_size,# crossbeam 1540
-aperture.esb_grid,esb_grid,# crossbeam 1540
-aperture.esb_grid_is,esb_grid,# crossbeam 1540
-aperture.wd,wd,# crossbeam 1540
-detection.scanrate,scan_speed,# crossbeam 1540
-detection.dwell_time,dwel_time,# crossbeam 1540
-detection.noise_reduction,noise_reduction,# crossbeam 1540
-aperture.nr_coeff,noise_reduction_value,# crossbeam 1540
-aperture.cycle_time,frame_time,# crossbeam 1540
-detection.store_resolution,image_size_x,# crossbeam 1540
-detection.store_resolution,image_size_y,# crossbeam 1540
-aperture.pixel_size,pixel_resolution,# crossbeam 1540
-aperture.width,image_width,# crossbeam 1540
-aperture.height,image_height,# crossbeam 1540
-aperture.mag,magnification,# crossbeam 1540
-system.system_type,machine,# hellios5
-user.date,date,# hellios5
-raw_file_name,raw_file_name,# hellios5
-detectors.name,detector,# hellios5
-detectors.mode,imaging_mode,# hellios5
-beam.hv,acc_voltage,# hellios5
-ebeam.aperture_diameter,aperture_size,# hellios5
-ebeam.wd,wd,# hellios5
-escan.dwell,dwel_time,# hellios5
-escan.line_integration,noise_reduction_value,# hellios5
-escan.frame_time,frame_time,# hellios5
-image.resolution_x,image_size_x,# hellios5
-image.resolution_y,image_size_y,# hellios5
-escan.pixel_width,pixel_resolution,# hellios5
-escan.hor_fieldsize,image_width,# hellios5
-escan.ver_fieldsize,image_height,# hellios5
-system.system_type,machine,# hellios G4
-user.date,date,# hellios G4
-raw_file_name,raw_file_name,# hellios G4
-detectors.name,detector,# hellios G4
-detectors.mode,imaging_mode,# hellios G4
-beam.hv,acc_voltage,# hellios G4
-ebeam.aperture_diameter,aperture_size,# hellios G4
-ebeam.wd,wd,# hellios G4
-escan.dwell,dwel_time,# hellios G4
-escan.line_integration,noise_reduction_value,# hellios G4
-escan.frame_time,frame_time,# hellios G4
-image.resolution_x,image_size_x,# hellios G4
-image.resolution_y,image_size_y,# hellios G4
-escan.pixel_width,pixel_resolution,# hellios G4
-escan.hor_fieldsize,image_width,# hellios G4
-escan.ver_fieldsize,image_height,# hellios G4
+aperture.date,date,"# crossbeam 1540, crossbeam 550 Manual"
+detection.detector_channel,detector,"# crossbeam 1540, crossbeam 550 Manual"
+systemval.file_name,raw_file_name,"# crossbeam 1540, crossbeam 550 Manual"
+detection.signalaz0,imaging_mode,# crossbeam 550 Manual
+detection.signalaz2,imaging_mode,# crossbeam 550 Manual
+detection.signalaz3,imaging_mode,# crossbeam 550 Manual
+aperture.actualkv,acc_voltage,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.aperture_size,aperture_size,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.esb_grid,esb_grid,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.esb_grid_is,esb_grid,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.wd,wd,"# crossbeam 1540, crossbeam 550 Manual"
+detection.scanrate,scan_speed,"# crossbeam 1540, crossbeam 550 Manual"
+detection.dwell_time,dwel_time,"# crossbeam 1540, crossbeam 550 Manual"
+detection.noise_reduction,noise_reduction,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.nr_coeff,noise_reduction_value,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.frame_time,frame_time,"# crossbeam 1540, crossbeam 550 Manual"
+detection.image_store,image_size,# crossbeam 550 Manual
+aperture.pixel_size,pixel_resolution,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.width,image_width,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.height,image_height,"# crossbeam 1540, crossbeam 550 Manual"
+aperture.mag,magnification,"# crossbeam 1540, crossbeam 550 Manual"

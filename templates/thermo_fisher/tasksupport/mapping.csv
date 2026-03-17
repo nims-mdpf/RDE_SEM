@@ -1,0 +1,17 @@
+﻿path,dict_key,instrument
+system.system_type,machine,# hellios
+user.date,date,# hellios
+raw_file_name,raw_file_name,# hellios
+detectors.name,detector,# hellios
+detectors.mode,imaging_mode,# hellios
+beam.hv,acc_voltage,# hellios
+ebeam.aperture_diameter,aperture_size,# hellios
+ebeam.wd,wd,# hellios
+escan.dwell,dwel_time,# hellios
+escan.line_integration,noise_reduction_value,# hellios
+escan.frame_time,frame_time,# hellios
+image.resolution_x,image_size_x,# hellios
+image.resolution_y,image_size_y,# hellios
+escan.pixel_width,pixel_resolution,# hellios
+escan.hor_fieldsize,image_width,# hellios
+escan.ver_fieldsize,image_height,# hellios

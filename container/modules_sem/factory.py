@@ -12,12 +12,12 @@ from modules_sem.JEOL.maiml_img.inputfile_handler import FileReader as maimlFile
 from modules_sem.JEOL.txt_img.inputfile_handler import FileReader as txtFileReader
 from modules_sem.meta_handler import MetaParser
 from modules_sem.structured_handler import StructuredDataProcesser
-from modules_sem.ZEISS.tif.inputfile_handler import FileReader as tifFileReader
+from modules_sem.TIFF_EXIF.inputfile_handler import FileReader as tifFileReader
 
 SEM_MANUFACTURER_CLASS_MAPPING: dict[str, type[FileReader]] = {
     "jeol_maiml": maimlFileReader,
     "jeol_fe": txtFileReader,
-    "zeiss": tifFileReader,
+    "tiff_exif": tifFileReader,
 }
 
 

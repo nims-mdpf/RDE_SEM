@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://rde.nims.go.jp/rde/dataset-templates/NIMS_SEM_JEOL_ZEISS/invoice.schema.json",
+    "$id": "https://rde.nims.go.jp/rde/dataset-templates/NIMS_SEM_ZEISS/invoice.schema.json",
     "description": "None",
     "type": "object",
     "required": [
