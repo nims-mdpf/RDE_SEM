@@ -80,11 +80,11 @@ def jeol_fe(
     )
 
 
-def zeiss(srcpaths: RdeInputDirPaths, resource_paths: RdeOutputResourcePath, config: dict) -> None:
-    """Execute structured processing for Zeiss data.
+def tiff_exif(srcpaths: RdeInputDirPaths, resource_paths: RdeOutputResourcePath, config: dict) -> None:
+    """Execute structured processing for TIFF EXIF data.
 
-    This function handles the structured processing of data obtained from the Zeiss
-    Scanning Electron Microscope (SEM). It includes tasks such as reading input files,
+    This function handles the structured processing of data obtained from TIFF files
+    with EXIF metadata. It includes tasks such as reading input files,
     extracting metadata, processing structured data, and generating visualizations.
 
     Args:
@@ -135,7 +135,7 @@ def dataset(
     dispatch_table = {
         "jeol_fe": jeol_fe,
         "jeol_maiml": jeol_maiml,
-        "zeiss": zeiss,
+        "tiff_exif": tiff_exif,
     }
 
     if manufacturer not in dispatch_table:

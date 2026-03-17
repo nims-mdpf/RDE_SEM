@@ -11,8 +11,9 @@ from rdetoolkit.rde2util import read_from_json_file
 from modules_sem.inputfile_handler import FileReader as tifFileReader
 from modules_sem.mapping_handler import build_meta, load_mapping
 from modules_sem.tif_exif_handler import TifExifProcessor
-from modules_sem.ZEISS.tif.mapping_csv import DictExtractor
-from modules_sem.ZEISS.tif.tif_exif_handler import FibicsParser, HeliosParser, PrefixedTextParser
+from modules_sem.TIFF_EXIF.mapping_csv import DictExtractor
+from modules_sem.TIFF_EXIF.Thermo_Fisher.tif_exif_handler import HeliosParser
+from modules_sem.TIFF_EXIF.ZEISS.tif_exif_handler import FibicsParser, PrefixedTextParser
 
 
 class FileReader(tifFileReader):
