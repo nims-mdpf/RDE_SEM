@@ -2,7 +2,7 @@
 
 ## 概要
 
-SEM(走査電子顕微鏡)をご利用の方に適したテンプレートです。3つの入力フォーマットに対応しており、日本電子（JEOL）製SEM装置のMaiML形式および画像形式(JPEG/PNG/TIFF)、ならびにZEISS製およびSThermo Fisher Scientific SEM装置の熱間圧延によるTIFF形式（熱間圧延SEM画像）に対応しています。
+SEM(走査電子顕微鏡)をご利用の方に適したテンプレートです。3つの入力フォーマットに対応しており、日本電子（JEOL）製SEM装置のMaiML形式および画像形式(JPEG/PNG/TIFF)、ならびにZEISS製およびThermo Fisher Scientific SEM装置の熱間圧延によるTIFF形式（熱間圧延SEM画像）に対応しています。
 
 SEMの専門家によって監修されたメタ情報をデータファイルから自動的にRDEが抽出します。
 
