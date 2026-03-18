@@ -1,11 +1,14 @@
 # 更新履歴
 
-## 2026/03/16 公開
+## 2026/03/17 更新
+- manual.md　誤字修正
+
+## 2026/03/16 更新
 - README.md、giude.md、docs/manual.md更新
 - 対応装置としてThermo Fisher Scientificを明記
 - DT0023をTIFF_EXIFとした
 
-## 2026/02/16 公開
+## 2026/02/16 更新
 - README.md、giude.md、docs/manual.md更新
 
 ## 2026/02/09 公開
