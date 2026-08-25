@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -108,7 +108,7 @@ class FileReader(tifFileReader):
         try:
             return datetime.fromisoformat(s).date().isoformat()
         except ValueError:
-            return datetime.strptime(s, "%m/%d/%Y").replace(tzinfo=timezone.utc).date().isoformat()
+            return datetime.strptime(s, "%m/%d/%Y").date().isoformat()
 
     def overwrite_invoice_if_needed(
         self,
