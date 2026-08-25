@@ -8,7 +8,6 @@ RDEデータセットテンプレート `RDE_SEM`　をローカル開発環境�
 以下の開発環境を用意してください。
 - python ver3.12以上
   - RDEの構造化処理プログラムはpythonを用いています 
-- RDEToolKit v1.5以上
 - pyenvなど仮想環境で動作させることを推奨
   - この説明ではpyenvを利用
 
@@ -37,9 +36,9 @@ workフォルダには以下の内容のフォルダが用意されています
 3. プログラムの実行
 
 テンプレートの選択
-- RDE_SEMデータセットテンプレートは、日本電子（JEOL）製SEM装置のmaiml形式およびjpg／png／tif形式、ならびにZEISS製SEM装置の熱間圧延によるtif形式（熱間圧延SEM画像）に対応しています
-- 利用時はJEOL_maiml、JEOL_fe、ZEISSのいずれかを選択します(両型式を同時に扱うことができません)
-- templateフォルダには、JEOL_maiml用、JEOL_fe用、ZEISS用それぞれのテンプレートが収められています
+- RDE_SEMデータセットテンプレートは、日本電子（JEOL）製SEM装置のmaiml形式およびtxt形式、ならびにZEISS製、Thermo Fisher製のSEM装置の熱間圧延によるtif形式（熱間圧延SEM画像）に対応しています
+- 利用時はJEOL_maiml、JEOL_fe、TIFF_EXIFのいずれかを選択します(両型式を同時に扱うことができません)
+- templateフォルダには、JEOL_maiml用、JEOL_fe用、TIFF_EXIF用それぞれのテンプレートが収められています
 
 
 ### 仮想環境作成
@@ -56,7 +55,7 @@ workフォルダには以下の内容のフォルダが用意されています
     ```
 4. 仮想環境作成(pyenvの事例)
     ```cmd
-    $ pyenv local 3.12.11
+    $ pyenv local 3.12.9
     $ python -m venv venv
     $ . venv/bin/activate
     (venv) $ pip install pip --upgrade
@@ -89,9 +88,9 @@ workフォルダには以下の内容のフォルダが用意されています
     ```
 10. テンプレートファイルの配置
   - tasksupportフォルダに以下のようにファイルをコピーします
-  - ここではSEM_ZEISS用テンプレートを選択しています
+  - ここではSEM_TIFF_EXIF用テンプレートを選択しています
     ```cmd
-    (venv) $ cp -p  ../templates/depth/tasksupport/* data/tasksupport/
+    (venv) $ cp -p  ../templates/zeiss/tasksupport/* data/tasksupport/
     (venv) $ tree data
     data
     ├── inputdata
@@ -125,7 +124,7 @@ workフォルダには以下の内容のフォルダが用意されています
     ├── invoice
     │   └── invoice.json
     └── tasksupport
-        ├── default_value.csv
+        ├── mapping.csv
         ├── invoice.schema.json
         ├── metadata-def.json
         └── rdeconfig.yaml

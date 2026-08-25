@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 import re
 from abc import ABC, abstractmethod
-from datetime import datetime, timezone
+from datetime import datetime
 from typing import Any
 from xml.etree.ElementTree import Element
 
@@ -608,12 +608,14 @@ class PrefixedTextParser(BaseExifParser):
         """
         if not s or not isinstance(s, str):
             return None
+
         for fmt in ("%d %b %Y", "%Y-%m-%d"):
             try:
-                dt = datetime.strptime(s.strip(), fmt).replace(tzinfo=timezone.utc)
-                return dt.strftime("%Y-%m-%d")
+                dt = datetime.strptime(s.strip(), fmt)
+                return dt.isoformat()
             except ValueError:
                 continue
+
         return None
 
     def _is_date_or_time(self, s: str) -> bool:

@@ -1,6 +1,7 @@
 [project]
 name = "RDE_SEM"
-version = "1.0.0"
+version = "1.0.1"
+requires-python = ">=3.12,<3.13"
 
 [tool.flake8]
 max-line-length = 250
@@ -99,6 +100,7 @@ ignore = [
     "D104",
     "D105",
     "D107",
+    "DTZ007",
     "N805",
     "PLR0913",
     "S307",

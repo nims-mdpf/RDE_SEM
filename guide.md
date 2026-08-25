@@ -21,37 +21,37 @@ SEMの専門家によって監修されたメタ情報を上記ファイルか�
 ## 基本情報
 
 ### コンテナ情報
-- 【コンテナ名】rdecontreg.azurecr.io/nims/mdpf_shared/nims_mdpf_shared_sem:v1.0
+- 【コンテナ名】rdecontreg.azurecr.io/nims/mdpf_shared/nims_mdpf_shared_sem:v1.0.1
 
 ### テンプレート情報
 - DT0021:
-    - 【データセットテンプレートID】NIMS_DT0021_SEM_JEOL_maiml_v1.0
+    - 【データセットテンプレートID】NIMS_DT0021_SEM_JEOL_maiml_v1.0.1
     - 【データセットテンプレート名日本語】SEM JEOL maiml データセットテンプレート
     - 【データセットテンプレート名英語】SEM JEOL maiml dataset-template
     - 【データセットテンプレートの説明】JEOLのSEMをご利用の方に適したモードです。MaiML形式でデータを取得されている方がご利用いただけます。 SEMの専門家によって監修されたメタ情報をmaimlファイルから自動的に抽出し格納します。maimlファイル中に記載されたresultTemplate_semResultImage に記載された画像ファイルを代表画像として登録します。
-    - 【バージョン】1.0
+    - 【バージョン】1.0.1
     - 【データセット種別】加工・計測レシピ型
     - 【データ構造化】あり (システム上「あり」を選択)
     - 【取り扱い事業】NIMS研究および共同研究プロジェクト (PROGRAM)
     - 【装置名】(なし。装置情報を紐づける場合はこのテンプレートを複製し、装置情報を設定すること。)
 
 - DT0022:
-    - 【データセットテンプレートID】NIMS_DT0022_SEM_JEOL_fe_v1.0
+    - 【データセットテンプレートID】NIMS_DT0022_SEM_JEOL_fe_v1.0.1
     - 【データセットテンプレート名日本語】SEM JEOL fe データセットテンプレート
     - 【データセットテンプレート名英語】SEM JEOL fe dataset-template
     - 【データセットテンプレートの説明】JEOLのSEMをご利用の方に適したモードです。txtフォーマットでデータを取得されている方がご利用いただけます。 SEMの専門家によって監修されたメタ情報をtxtファイルから自動的に抽出し格納します。SEM画像とtxt形式のメタ情報の2ファイルを拡張子以外は同一にして組にし、zip化して登録します。
-    - 【バージョン】1.0
+    - 【バージョン】1.0.1
     - 【データセット種別】加工・計測レシピ型
     - 【データ構造化】あり (システム上「あり」を選択)
     - 【取り扱い事業】NIMS研究および共同研究プロジェクト (PROGRAM)
     - 【装置名】(なし。装置情報を紐づける場合はこのテンプレートを複製し、装置情報を設定すること。)
 
 - DT0023:
-    - 【データセットテンプレートID】NIMS_DT0023_SEM_TIFF_EXIF_v1.0
+    - 【データセットテンプレートID】NIMS_DT0023_SEM_TIFF_EXIF_v1.0.1
     - 【データセットテンプレート名日本語】SEM TIFF_EXIF データセットテンプレート
     - 【データセットテンプレート名英語】SEM TIFF_EXIF dataset-template
     - 【データセットテンプレートの説明】ZEISSおよびThermo Fisher Scientific製のSEMをご利用の方に適したモードです。TIFF形式でデータを取得している方にご利用いただけます。SEMの専門家が監修したメタ情報をtifファイルから自動的に抽出し格納します。熱間圧延によるSEM（走査型電子顕微鏡）画像を、構造化処理に適した形式で扱うためのデータセットテンプレートです。
-    - 【バージョン】1.0
+    - 【バージョン】1.0.1
     - 【データセット種別】加工・計測レシピ型
     - 【データ構造化】あり (システム上「あり」を選択)
     - 【取り扱い事業】NIMS研究および共同研究プロジェクト (PROGRAM)
@@ -73,12 +73,8 @@ sem
 ├── README.md
 ├── container
 │   ├── Dockerfile
-│   ├── Dockerfile_nims
 │   ├── data (入出力データ)
 │   ├── main.py
-│   ├── modules (共通ソースコード)
-│   │   ├── __init__.py
-│   │   └── datasets_process.py (構造化処理の大元)
 │   ├── modules_sem (SEM向けソースコード)
 │   │   ├── JEOL
 │   │   │   ├── __init__.py
@@ -100,6 +96,7 @@ sem
 │   │   │   ├── inputfile_handler.py (入力ファイル読み込み)
 │   │   │   └── mapping_csv.py (マッピングCSV処理)
 │   │   ├── __init__.py
+│   │   ├── datasets_process.py (構造化処理の大元)
 │   │   ├── factory.py (設定ファイル、使用クラス取得)
 │   │   ├── graph_handler.py (グラフ描画)
 │   │   ├── inputfile_handler.py (共通入力ファイル処理)
@@ -114,9 +111,13 @@ sem
 │   ├── requirements.txt
 │   └── tests (テストコード)
 ├── docs (ドキュメント)
-│   ├── mkdoc_ci_scripts.py
-│   └── template
-│       └── README.md
+│   ├── manual
+│   │   ├── RDEDatasetTemplateSheet_RDE_SEM_JEOL_fe.xlsx
+│   │   ├── RDEDatasetTemplateSheet_RDE_SEM_JEOL_maiml.xlsx
+│   │   ├── RDEDatasetTemplateSheet_RDE_SEM_TIFF_EXIF.xlsx
+│   │   └── manual.md
+│   └── requirement_analysis
+│       └── 要件定義.xlsx
 ├── inputdata (サンプルデータ)
 │   ├── jeol_fe (JEOL FE向け)
 │   ├── jeol_maiml (JEOL MAIML向け)
@@ -261,4 +262,4 @@ container/data
 
 ### 動作環境
 - Python: 3.12
-- RDEToolKit: 1.6.1
+- RDEToolKit: 1.7.1

@@ -5,7 +5,7 @@ job_specifications:
   max_task_retries: 0
   tasks:
   - id: task_1
-    docker_image: rdecontreg.azurecr.io/nims/mdpf_shared/nims_mdpf_shared_sem:v1.0
+    docker_image: rdecontreg.azurecr.io/nims/mdpf_shared/nims_mdpf_shared_sem:v1.0.1
     command: python /app/main.py
     input_data:
       azure_storage:
